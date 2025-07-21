@@ -1283,9 +1283,10 @@ img {
   }
 }
 .tj-header-area.header-2.header-absolute .header-wrapper {
-  background: rgba(247, 247, 247, 0.1);
-  -webkit-backdrop-filter: blur(35px);
-          backdrop-filter: blur(35px);
+  background: rgb(247, 247, 247);
+  border-left: none;            /* remove left border */
+  border-right: none;           /* remove right border */
+  border-radius: 50px 50px 50px 50px; /* curve right side only (optional) */
   padding: 0px 24px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -15783,7 +15784,7 @@ blockquote cite::before {
   height: 100%;
   top: 0;
   inset-inline-start: 0;
-  background: rgba(5, 18, 41, 0.85);
+  background: rgba(5, 18, 41, 0.2);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
