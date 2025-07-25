@@ -18,14 +18,16 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(270deg, #ffffff, #e6f0ff, #d9e6ff);
-      background-size: 300% 300%;
+      background: 
+        linear-gradient(270deg, rgba(255, 255, 255, 0.8), rgba(230, 240, 255, 0.8), rgba(217, 230, 255, 0.8)),
+        url('./background.webp') no-repeat center center fixed;
+      background-size: 300% 300%, cover;
       animation: Gradient 15s ease infinite;
     }
     @keyframes Gradient {
-      0% { background-position: 0% 50% }
-      50% { background-position: 100% 50% }
-      100% { background-position: 0% 50% }
+      0% { background-position: 0% 50%, center center }
+      50% { background-position: 100% 50%, center center }
+      100% { background-position: 0% 50%, center center }
     }
     .glass-link {
       backdrop-filter: blur(12px);
