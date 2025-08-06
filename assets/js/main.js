@@ -1469,7 +1469,7 @@
 	let device_width = window.innerWidth;
 	const serviceStack = gsap.utils.toArray(".service-stack");
 	if (serviceStack.length > 0) {
-		if (device_width > 991) {
+		if (device_width > 1) {
 			serviceStack.forEach(item => {
 				gsap.to(item, {
 					opacity: 0,
